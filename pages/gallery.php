@@ -14,7 +14,7 @@ include '../includes/header.php';
     <div class="gallery-container">
         <!-- Main image display area -->
         <div class="main-image-container">
-            <img id="mainImage" src="/images/gallery/gallery_image1.jpg" alt="Gallery Image 1" class="main-image" />
+            <img id="mainImage" src="/images/gallery/img_galary1.JPG" alt="Gallery Image 1" class="main-image" />
         </div>
         
         <!-- Navigation buttons -->
@@ -27,16 +27,16 @@ include '../includes/header.php';
         <div class="thumbnails-container">
             <h3>All Images (Click to View)</h3>
             <div class="thumbnails">
-                <img src="/images/gallery/img_galary1.jpg" alt="Thumbnail 1" class="thumbnail active" data-index="0" onclick="updateMainImage(0)">
-                <img src="/images/gallery/img_galary2.jpg" alt="Thumbnail 2" class="thumbnail" data-index="1" onclick="updateMainImage(1)">
-                <img src="/images/gallery/img_galary3.jpg" alt="Thumbnail 3" class="thumbnail" data-index="2" onclick="updateMainImage(2)">
-                <img src="/images/gallery/img_galary4.jpg" alt="Thumbnail 4" class="thumbnail" data-index="3" onclick="updateMainImage(3)">
-                <img src="/images/gallery/img_galary5.jpg" alt="Thumbnail 5" class="thumbnail" data-index="4" onclick="updateMainImage(4)">
-                <img src="/images/gallery/img_galary6.jpg" alt="Thumbnail 6" class="thumbnail" data-index="5" onclick="updateMainImage(5)">
-                <img src="/images/gallery/img_galary7.jpg" alt="Thumbnail 7" class="thumbnail" data-index="6" onclick="updateMainImage(6)">
-                <img src="/images/gallery/img_galary8.jpg" alt="Thumbnail 8" class="thumbnail" data-index="7" onclick="updateMainImage(7)">
-                <img src="/images/gallery/img_galary9.jpg" alt="Thumbnail 9" class="thumbnail" data-index="8" onclick="updateMainImage(8)">
-                <img src="/images/gallery/img_galary10.jpg" alt="Thumbnail 10" class="thumbnail" data-index="9" onclick="updateMainImage(9)">
+                <img src="/images/gallery/img_galary1.JPG" alt="Thumbnail 1" class="thumbnail active" data-index="0" onclick="updateMainImage(0)">
+                <img src="/images/gallery/img_galary2.JPG" alt="Thumbnail 2" class="thumbnail" data-index="1" onclick="updateMainImage(1)">
+                <img src="/images/gallery/img_galary3.JPG" alt="Thumbnail 3" class="thumbnail" data-index="2" onclick="updateMainImage(2)">
+                <img src="/images/gallery/img_galary4.JPG" alt="Thumbnail 4" class="thumbnail" data-index="3" onclick="updateMainImage(3)">
+                <img src="/images/gallery/img_galary5.JPG" alt="Thumbnail 5" class="thumbnail" data-index="4" onclick="updateMainImage(4)">
+                <img src="/images/gallery/img_galary6.JPG" alt="Thumbnail 6" class="thumbnail" data-index="5" onclick="updateMainImage(5)">
+                <img src="/images/gallery/img_galary7.JPG" alt="Thumbnail 7" class="thumbnail" data-index="6" onclick="updateMainImage(6)">
+                <img src="/images/gallery/img_galary8.JPG" alt="Thumbnail 8" class="thumbnail" data-index="7" onclick="updateMainImage(7)">
+                <img src="/images/gallery/img_galary9.JPG" alt="Thumbnail 9" class="thumbnail" data-index="8" onclick="updateMainImage(8)">
+                <img src="/images/gallery/img_galary10.JPG" alt="Thumbnail 10" class="thumbnail" data-index="9" onclick="updateMainImage(9)">
             </div>
         </div>
     </div>
@@ -173,7 +173,7 @@ function updateMainImage(index) {
     // Update main image
     const imageNumber = index + 1;
     const mainImage = document.getElementById('mainImage');
-    mainImage.src = `/images/gallery/gallery_image${imageNumber}.jpg`;
+    mainImage.src = `/images/gallery/img_galary${imageNumber}.JPG`;
     mainImage.alt = `Gallery Image ${imageNumber}`;
     
     // Update thumbnails active state
