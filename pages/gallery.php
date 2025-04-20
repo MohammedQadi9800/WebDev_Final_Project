@@ -58,6 +58,9 @@ include '../includes/header.php';
 /* Additional styles specific to the gallery page */
 .gallery-container {
     margin: 2rem 0;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .main-image-container {
@@ -70,8 +73,9 @@ include '../includes/header.php';
 
 .main-image {
     max-width: 100%;
-    max-height: 500px;
+    max-height: 400px; /* Reduced from 500px */
     border: 1px solid #ddd;
+    object-fit: contain; /* Ensures image maintains aspect ratio */
 }
 
 .gallery-controls {
@@ -112,17 +116,19 @@ include '../includes/header.php';
 .thumbnails {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 0.75rem;
     justify-content: center;
+    padding: 0.5rem;
 }
 
 .thumbnail {
-    width: 100px;
-    height: 75px;
+    width: 80px;
+    height: 60px;
     object-fit: cover;
     border: 2px solid #ddd;
     cursor: pointer;
     transition: border-color 0.3s ease;
+    display: inline-block; /* Ensures all thumbnails are visible */
 }
 
 .thumbnail:hover {
@@ -143,19 +149,27 @@ include '../includes/header.php';
 
 @media screen and (max-width: 768px) {
     .thumbnail {
-        width: 80px;
-        height: 60px;
+        width: 70px;
+        height: 50px;
+    }
+    
+    .main-image {
+        max-height: 350px;
     }
 }
 
 @media screen and (max-width: 480px) {
     .thumbnails {
-        gap: 0.25rem;
+        gap: 0.5rem;
     }
     
     .thumbnail {
-        width: 60px;
-        height: 45px;
+        width: 50px;
+        height: 40px;
+    }
+    
+    .main-image {
+        max-height: 300px;
     }
 }
 </style>
@@ -226,6 +240,25 @@ function updateButtonStates() {
     }
 }
 
+// Ensure all thumbnails are loaded properly
+function checkImagesLoaded() {
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    thumbnails.forEach(thumbnail => {
+        thumbnail.onerror = function() {
+            console.error('Failed to load thumbnail:', this.src);
+            // Try to reload with a cache-busting parameter
+            this.src = this.src + '?t=' + new Date().getTime();
+        };
+    });
+    
+    const mainImage = document.getElementById('mainImage');
+    mainImage.onerror = function() {
+        console.error('Failed to load main image:', this.src);
+        // Try to reload with a cache-busting parameter
+        this.src = this.src + '?t=' + new Date().getTime();
+    };
+}
+
 // Add event listeners when the page loads
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('prevButton').addEventListener('click', showPreviousImage);
@@ -233,6 +266,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initialize button states
     updateButtonStates();
+    
+    // Check if images are loaded properly
+    checkImagesLoaded();
 });
 </script>
 
