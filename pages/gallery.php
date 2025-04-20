@@ -27,16 +27,16 @@ include '../includes/header.php';
         <div class="thumbnails-container">
             <h3>All Images (Click to View)</h3>
             <div class="thumbnails">
-                <img src="/images/gallery/gallery_image1.jpg" alt="Thumbnail 1" class="thumbnail active" data-index="0" onclick="updateMainImage(0)">
-                <img src="/images/gallery/gallery_image2.jpg" alt="Thumbnail 2" class="thumbnail" data-index="1" onclick="updateMainImage(1)">
-                <img src="/images/gallery/gallery_image3.jpg" alt="Thumbnail 3" class="thumbnail" data-index="2" onclick="updateMainImage(2)">
-                <img src="/images/gallery/gallery_image4.jpg" alt="Thumbnail 4" class="thumbnail" data-index="3" onclick="updateMainImage(3)">
-                <img src="/images/gallery/gallery_image5.jpg" alt="Thumbnail 5" class="thumbnail" data-index="4" onclick="updateMainImage(4)">
-                <img src="/images/gallery/gallery_image6.jpg" alt="Thumbnail 6" class="thumbnail" data-index="5" onclick="updateMainImage(5)">
-                <img src="/images/gallery/gallery_image7.jpg" alt="Thumbnail 7" class="thumbnail" data-index="6" onclick="updateMainImage(6)">
-                <img src="/images/gallery/gallery_image8.jpg" alt="Thumbnail 8" class="thumbnail" data-index="7" onclick="updateMainImage(7)">
-                <img src="/images/gallery/gallery_image9.jpg" alt="Thumbnail 9" class="thumbnail" data-index="8" onclick="updateMainImage(8)">
-                <img src="/images/gallery/gallery_image10.jpg" alt="Thumbnail 10" class="thumbnail" data-index="9" onclick="updateMainImage(9)">
+                <img src="/images/gallery/img_galary1.jpg" alt="Thumbnail 1" class="thumbnail active" data-index="0" onclick="updateMainImage(0)">
+                <img src="/images/gallery/img_galary2.jpg" alt="Thumbnail 2" class="thumbnail" data-index="1" onclick="updateMainImage(1)">
+                <img src="/images/gallery/img_galary3.jpg" alt="Thumbnail 3" class="thumbnail" data-index="2" onclick="updateMainImage(2)">
+                <img src="/images/gallery/img_galary4.jpg" alt="Thumbnail 4" class="thumbnail" data-index="3" onclick="updateMainImage(3)">
+                <img src="/images/gallery/img_galary5.jpg" alt="Thumbnail 5" class="thumbnail" data-index="4" onclick="updateMainImage(4)">
+                <img src="/images/gallery/img_galary6.jpg" alt="Thumbnail 6" class="thumbnail" data-index="5" onclick="updateMainImage(5)">
+                <img src="/images/gallery/img_galary7.jpg" alt="Thumbnail 7" class="thumbnail" data-index="6" onclick="updateMainImage(6)">
+                <img src="/images/gallery/img_galary8.jpg" alt="Thumbnail 8" class="thumbnail" data-index="7" onclick="updateMainImage(7)">
+                <img src="/images/gallery/img_galary9.jpg" alt="Thumbnail 9" class="thumbnail" data-index="8" onclick="updateMainImage(8)">
+                <img src="/images/gallery/img_galary10.jpg" alt="Thumbnail 10" class="thumbnail" data-index="9" onclick="updateMainImage(9)">
             </div>
         </div>
     </div>

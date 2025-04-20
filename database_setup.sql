@@ -23,7 +23,7 @@ CREATE TABLE IF NOT EXISTS feedback (
     CONSTRAINT check_rating CHECK (rating >= 1 AND rating <= 5)
 );
 
--- Create courses table (primary table)
+--   courses table (primary table)
 CREATE TABLE IF NOT EXISTS courses (
     course_id INT AUTO_INCREMENT PRIMARY KEY,
     course_code VARCHAR(10) NOT NULL,
