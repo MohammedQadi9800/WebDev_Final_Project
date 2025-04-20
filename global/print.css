@@ -1,0 +1,82 @@
+/* 
+ * Print CSS file for CPCS403 Final Project
+ * This file is specifically for printing table content
+ */
+
+/* Hide elements not needed for printing */
+header, 
+.main-navigation, 
+footer, 
+button,
+.gallery-controls,
+form {
+    display: none !important;
+}
+
+/* Basic page setup */
+body {
+    font-family: serif;
+    font-size: 12pt;
+    line-height: 1.5;
+    color: #000;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container adjustments */
+.container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Table specific styles for printing */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20pt;
+}
+
+th, td {
+    padding: 8pt;
+    text-align: left;
+    border: 1pt solid #000;
+}
+
+th {
+    background-color: #eee !important;
+    color: #000 !important;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9 !important;
+}
+
+/* Add table caption at the top */
+table::before {
+    content: "Table Content - CPCS403 Final Project";
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14pt;
+    margin-bottom: 10pt;
+}
+
+/* Page breaks */
+h1, h2, h3, table {
+    page-break-after: avoid;
+    page-break-inside: avoid;
+}
+
+/* Links */
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Remove background colors */
+* {
+    background-color: transparent !important;
+}
