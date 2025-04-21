@@ -1,8 +1,11 @@
+<?php
+// Footer include file for CPCS403 Final Project
+?>
 <div class="footer-validation">
     <a href="https://validator.w3.org/check?uri=referer" target="_blank">
-        <img src="images/valid-xhtml10" alt="Valid XHTML 1.0" />
+        <img src="/images/valid-xhtml10.png" alt="Valid XHTML 1.0" />
     </a>
     <a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank">
-        <img src="images/valid-css-blue" alt="Valid CSS" />
+        <img src="/images/valid-css-blue.png" alt="Valid CSS" />
     </a>
 </div>
