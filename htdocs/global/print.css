@@ -1,0 +1,35 @@
+/* print.css */
+
+/* Hide everything except the table */
+body * {
+    display: none !important;
+  }
+  
+  table.schedule, 
+  table.schedule caption, 
+  table.schedule thead, 
+  table.schedule tbody, 
+  table.schedule tr, 
+  table.schedule td, 
+  table.schedule th {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    color: black;
+  }
+  
+  /* Make table readable when printed */
+  table.schedule th,
+  table.schedule td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  table.schedule caption {
+    caption-side: top;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
